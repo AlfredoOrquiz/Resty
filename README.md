@@ -32,4 +32,4 @@ Students will be creating and styling a Counter application. Look for the follow
 
 ![UML](Images/Lab-26.png)
 
-site: 
+
