@@ -9,17 +9,12 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlfredoOrquiz/Resty1.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlfredoOrquiz/Resty1/issues"
   },
-  "homepage": "https://github.com/AlfredoOrquiz/Resty1#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
