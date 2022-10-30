@@ -9,15 +9,9 @@ describe("Testing our Click counter", () => {
     render(
       <ClickCounter id="1" handleClick={testFunction} displayValue="test" />
     );
-
-    // scrape our rendered test environment for an element
     const button = screen.getByTestId("click-counter-1");
     expect(button).toBeInTheDocument();
-
-    // clicks on an element that is rendered in the test environment
     fireEvent.click(button);
-
-    // expect our test function to be called in the test environment
     expect(testFunction).toHaveBeenCalled();
   });
 });

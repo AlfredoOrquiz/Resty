@@ -9,6 +9,7 @@ const App = () => {
 
   let [data, setData] = useState(null);
   let [requestParams, setRequestParams] = useState({});
+  let [loading, setLoading] = useState(false);
 
   const fetchData = (requestParams) => {
     console.log(requestParams);
@@ -28,6 +29,7 @@ const App = () => {
       ],
     };
     setData(data);
+    setLoading(false);
     await setRequestParams(requestParams);
     await fetchData(requestParams);
   }
@@ -37,7 +39,7 @@ const App = () => {
       <Header />
       <div>Request Method: {requestParams.method}</div>
       <div>URL {requestParams.url}</div>
-      <Form handleApiCall={callApi} />
+      <Form loading={ loading } handleApiCall={callApi} />
       <Results data={data} />
       <Footer />
     </React.Fragment>
